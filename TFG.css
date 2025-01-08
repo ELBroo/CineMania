@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'Papaya';
+    src: url('Star Trek Enterprise Future.ttf');
+
+}
+
+@font-face {
+    font-family: 'TextMenu';
+    src: url('Comic Vaganza.ttf');
+
+
+}
+
+@font-face {
+    font-family: 'TextFooter';
+    src: url('Cleudia Rounded.otf');
+
+}
+
+@font-face {
+    font-family: 'Titulo';
+    src: url('Alien Resurrection.ttf');
+}
+.evento {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    margin-top: -100px;
+    transition: all 0.5s ease;
+}
+.subrayado{
+    text-decoration: none;
+    color: white;
+}
+.subrayado:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+
+}
+#tamañoImagen {
+    width: 50px;
+}
+.evento:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+#CineMania {/*Titulo de la página*/
+    font-family: 'Titulo', sans-serif;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    margin-right: 500px;
+    display: inline-block;
+    font-size: 35px;
+    animation: flicker 2s infinite alternate;
+    transition: scale(1.1);
+}
+#formado {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.bg-dark-custom {/*Fondo de la página*/
+    background-color: black !important;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+
+.menu {/*Menu*/
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: -55px;
+    padding-bottom: 20px;
+    align-content: center;
+    background: linear-gradient(to bottom, rgb(243, 171, 4) , #000000); /* Degradado de amarillo a negro */
+    /* Degradado de amarillo a negro */
+    width: 100%;
+    position: relative;
+    /* Necesario para el posicionamiento del submenú */
+
+
+}
+
+.menu a {/*Color del texto del botón del menu*/
+    color: white;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+
+}
+
+.menu a:hover {/*Color del texto del botón del menu al pasar el cursor*/
+    color: rgb(243, 171, 4);
+    /* Color al pasar el cursor, para un efecto más dinámico */
+    text-shadow: 0 0 5px rgb(243, 171, 4), 0 0 10px rgb(243, 171, 4);
+
+}
+
+.espacio:hover {/*Espacio entre los botones del menu al pasar el cursor*/
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+
+}
+
+.espacio {/*El marco y espacio entre los botones del menu*/
+
+    font-family: '', sans-serif;
+    color: white;
+    font-size: 14px;
+    padding: 9px;
+    text-decoration: none;
+    margin-right: 50px;
+    margin-top: 50px;
+    border: 2px solid white;
+    display: inline-block;
+
+}
+
+.logo {/*Logo*/
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+/*Estas clases pertenecen a un carrusel creado como una lista, de forma que 
+va modificando su anchura, posicion, animacion, etc, para asi ver como un carrusel
+de imagenes la lista*/
+.carrusel {/*Carrusel1*/
+    width: 1080px;
+    height: auto;
+    margin: 50px auto 0;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.carrusel ul {/*Lista de imágenes del carrusel1*/
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+
+}
+
+.carrusel li {/*Lista de imágenes del carrusel1*/
+    list-style: none;
+    width: 100%;
+    position: relative;
+}
+
+.carrusel img {/*Imagen del carrusel1*/
+    width: 100%;
+}
+
+.pelisEstreno {/*Titulo de Peliculas en Cines*/
+    padding: 50px;
+    font-family: 'TextFooter', sans-serif;
+    color: rgb(243, 171, 4);
+    font-size: 14px;
+    padding: 17px;
+    margin-top: -130px;
+    margin-left: 50px;
+    display: inline-block;
+
+}
+
+.seriesEstreno {/*Titulo de Series en Estreno*/
+    padding: 50px;
+    font-family: 'TextFooter', sans-serif;
+    color: rgb(243, 171, 4);
+    font-size: 14px;
+    padding: 17px;
+    margin-top: 40px;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+
+
+
+.linea {/*Linea de separación*/
+    text-align: center;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: white;
+    background-repeat: repeat-x;
+    background-position: center;
+    margin-top: 20px;
+}
+
+
+.carousel-item {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card img {
+    height: 350px;
+    object-fit: cover;
+}
+
+
+@keyframes flicker {
+
+    0%,
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 5px rgb(243, 171, 4), 0 0 10px rgb(243, 171, 4), 0 0 20px rgb(243, 171, 4);
+    }
+
+    50% {
+        opacity: 0.8;
+        text-shadow: 0 0 10px rgb(243, 171, 4), 0 0 20px rgb(243, 171, 4), 0 0 30px rgb(243, 171, 4);
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide {
+    16.6% {
+        margin-left: 0%;
+    }
+
+    33.2% {
+        margin-left: 0%;
+    }
+
+    49.8% {
+        margin-left: -100%;
+    }
+
+    66.4% {
+        margin-left: -100%;
+    }
+
+    83% {
+        margin-left: -200%;
+    }
+
+    100% {
+        margin-left: -200%;
+    }
+
+
+}
+
+
+
+.card {
+    padding: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.row {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+body {
+    background-color: black;
+    justify-content: center;
+
+}
+
+
+.contenedor {
+
+    max-width: 1600px;
+    /* Ancho máximo en pantallas grandes */
+    margin: 0 auto;
+    /* Centra el contenido horizontalmente */
+    padding: 0 15px;
+    /* Agrega un pequeño padding para que no toque los bordes */
+}
+
+
+#carusel2,
+#carusel3 {
+    margin-top: 60px;
+}
+
+/* Estilos generales */
+body {
+    font-size: 16px;
+}
+
+
+#apartado {
+    background: linear-gradient(to bottom, rgb(243, 171, 4), #000000);
+    /* Degradado de amarillo a negro */
+    width: 107px;
+    margin-right: -0px;
+    border: 3px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+#apartado:hover {
+    background: rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.dropdown {
+    position: relative;
+    /* Necesario para el submenú */
+    display: inline-block;
+    /* Para que esté en línea con otros elementos */
+}
+
+.submenu {
+    display: none;
+    /* Oculta el submenú por defecto */
+    padding: 5px 0;
+    /* Espacio interno alrededor de los enlaces */
+    margin-left: 20px;
+    position: absolute;
+    /* Posiciona el submenú en relación con el elemento padre */
+    z-index: 1;
+    /* Asegura que esté por encima de otros elementos */
+}
+
+.submenu a {
+    margin-bottom: 5px;
+    color: white;
+    /* Color del texto del submenú */
+    padding: 6px 10px;
+    /* Espaciado interno */
+    text-decoration: none;
+    /* Sin subrayado */
+    text-align: center;
+    /*Posiciona  el texto en el centro */
+    display: block;
+    /* Hace que cada enlace ocupe toda la línea */
+}
+
+.dropdown:hover .submenu {
+    
+    display: block;
+    /* Muestra el submenú cuando se pasa el mouse sobre el dropdown */
+}

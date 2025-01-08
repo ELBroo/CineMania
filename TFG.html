@@ -1,0 +1,430 @@
+<html class="fondo bg-dark">
+<!--
+Acceso Milaulas:
+Usuario=alumno 
+Contraseña=Alumno#01
+-->
+<head>
+  <title>CineMania</title>
+  <link rel="stylesheet" href="TFG.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="fondo bg-dark-custom">
+  <!--Cae-->
+  <nav class="menu">
+    <img class="logo" src="fotor-ai-2024100122925-removebg.png" alt="logo" width="130" height="130">
+    <p id="CineMania">CineMania</p>
+    <a class="espacio" href="TFG.html">Inicio</a>
+    <div class="dropdown">
+      <a class="espacio" href="Peliculas.html">Peliculas</a>
+      <div class="submenu">
+        <a id="apartado" href="Cast.html">Cast</a>
+        <a id="apartado" href="Galeria.html">Crew</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a class="espacio" href="Series.html">Series</a>
+      <div class="submenu">
+        <a id="apartado" href="Cast.html">Cast</a>
+        <a id="apartado" href="Galeria.html">Crew</a>
+      </div>
+    </div>
+    <div class="dropdown">
+        <a class="espacio" id="Registro" href="WatchList.html">WatchList</a>
+        <div class="submenu">
+            <a id="apartado" href="https://cinemania.milaulas.com/my/courses.php">Moodle</a>
+        </div>
+    </div>
+    <a class="espacio" id="Registro" href="Formulario.html">Registro</a>
+
+  </nav>
+  <div class="contenedor">
+    <!--CarruselPublicidad-->
+    <div class="carrusel rounded">
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=RNEt4JPlrFE" target="_blank">
+            <img src="17268273276833.png" alt="pinguino">
+          </a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=LO9l151vcUI" target="_blank">
+            <img src="KLIO7OIGOVHKZJWEI5533FL3NM.avif" alt="hombresaco" width="100%" height="75%">
+          </a>
+        </li>
+        <li><a href="https://www.youtube.com/watch?v=QtZPjL_CbQI" target="_blank">
+            <img src="C7QYLSLZWVFG5ECM7UIG4NKAPM.avif" alt="Joker">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--TituloPeliculas-->
+    <div class="pelisEstreno">
+      <h3>PeliculasRecomendadas</h3>
+    </div>
+
+    <!--CarruselPeliculas-->
+    <div id="carusel1" class="carousel">
+      <div class="carousel-inner">
+        <!-- Primera diapositiva (activa) -->
+        <div class="carousel-item active">
+          <div class="row my-4 mx-4">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="7309.jpg" class="card-img-top" alt="Silo">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="7086.jpg" class="card-img" alt="Miércoles">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="6839.jpg" class="card-img-top" alt="Guardianes de la Galaxia Vol. 2">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="7191.jpg" class="card-img-top" alt="Silo">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="1246754-la-joia-bad-gyal-0-1000-0-1500-crop.jpg" class="card-img" alt="Miércoles">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Segunda diapositiva -->
+        <div class="carousel-item">
+          <div class="row my-4 mx-4">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="992360-smile-2-2024-0-1000-0-1500-crop.jpg" class="card-img-top" alt="Silo">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="7162.jpg" class="card-img-top" alt="Miércoles">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="980523-odio-el-verano-0-1000-0-1500-crop.jpg" class="card-img-top"
+                  alt="Guardianes de la Galaxia Vol. 2">
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="1119429-i-am-nevenka-0-1000-0-1500-crop.jpg" class="card-img-top" alt="Silo">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="1071196-the-wild-robot-0-1000-0-1500-crop.jpg" class="card-img" alt="Miércoles">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carusel1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carusel1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--TituloSeriesEstreno-->
+    <div class="seriesEstreno ">
+      <h3>Series Recomendadas</h3>
+    </div>
+    <!--CarruselSeries-->
+    <div id="carusel2" class="carousel">
+      <div class="carousel-inner">
+        <!-- Primera diapositiva (activa) -->
+        <div class="carousel-item active">
+          <div class="row my-4 mx-4">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="449547.jpg" class="card-img-top">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="fe00d709777ed4c4adb0e004bb5f16d6.jpg" class="card-img">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="Monstruos_La_historia_de_Lyle_y_Erik_Menendez_Miniserie_de_TV-419063003-large.jpg"
+                  class="card-img-top">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="Annatar.jpg" class="card-img-top">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="fdabbd46872d521e27dc17da98ca926c.jpg" class="card-img">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Segunda diapositiva -->
+        <div class="carousel-item">
+          <div class="row my-4 mx-4">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="From_Serie_de_TV-819325461-large.jpg" class="card-img-top" alt="Silo">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="Kaos_Serie_de_TV-494560586-large.jpg" class="card-img" alt="Miércoles">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="Grotesquerie_Serie_de_TV-717629206-large.jpg" class="card-img-top"
+                  alt="Guardianes de la Galaxia Vol. 2">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="944c878ce28df1df1f2f07dc2104afa3.jpg" class="card-img-top" alt="Silo">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="the_lincoln_lawyer-712454950-mmed.jpg" class="card-img" alt="Miércoles">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carusel2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carusel2" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="seriesEstreno ">
+      <h3>Top 10 Peliculas Recomendadas</h3>
+    </div>
+    <!--CarruselSeries-->
+    <div id="carusel3" class="carousel">
+      <div class="carousel-inner">
+        <!-- Primera diapositiva (activa) -->
+        <div class="carousel-item active">
+          <div class="row my-4 mx-4">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="292688-the-grinch-0-500-0-750-crop.jpg" class="card-img-top">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="8IWPBT1rkAaI8Kpk5V3WfQRklJ7-0-500-0-750-crop.jpg" class="card-img">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="home alone 2-0-500-0-750-crop.jpg" class="card-img-top">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="47553-the-grinch-0-500-0-750-crop.jpg" class="card-img-top">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="40653-a-christmas-carol-0-500-0-750-crop.jpg" class="card-img">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Segunda diapositiva -->
+        <div class="carousel-item">
+          <div class="row my-4 mx-4">
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="48883-the-polar-express-0-500-0-750-crop.jpg" class="card-img-top" alt="Silo">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="51602-love-actually-0-500-0-750-crop.jpg" class="card-img" alt="Miércoles">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="lJqIgDqRr3nw3PiGu7ESCANCs9I-0-500-0-750-crop.jpg" class="card-img-top"
+                  alt="Guardianes de la Galaxia Vol. 2">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="45339-the-santa-clause-0-500-0-750-crop.jpg" class="card-img-top" alt="Silo">
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <div class="card">
+                <img src="47422-the-santa-clause-2-0-500-0-750-crop.jpg" class="card-img" alt="Miércoles">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carusel3" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carusel3" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <div id="formado">
+        <div>
+          <p class="mb-3 lh-1">Si tiene alguna duda, sugerencia o comentario, no dude en contactarnos.</p>
+
+          <div class="d-flex justify-content-center mb-3">
+            <div class="me-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-at"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914" />
+              </svg>
+              <span>josete.archilla@gmail.com</span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-. ```html
+445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+              </svg>
+              <span>643 67 07 59</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="mb-2">Síguenos en:</p>
+
+          <div class="d-flex justify-content-center mb-3 lh-3">
+            <a href="https://www.instagram.com/cinemania_00/" target="_blank" class="subrayado">
+            <div class="me-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+              </svg>
+              <span>@CineMania_</span>
+            </a>
+            </div>
+            
+            <div class="me-4">
+              <a href="https://www.tiktok.com/@cinemania_001" target="_blank" class="subrayado">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok"
+                viewBox="0 0 16 16">
+                <path
+                  d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+              </svg>
+              <span>@CineMania_</span>
+              </a>
+            </div>
+            
+            <div>
+              <a href="https://x.com/CineMania_00" target="_blank" class="subrayado">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x"
+                viewBox="0 0 16 16">
+                <path
+                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+              </svg>
+              <span>@CineMania_</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="linea my-3"></div>
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">2024
+          CineMania</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1"
+          target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img
+            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
